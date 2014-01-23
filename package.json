@@ -1,0 +1,17 @@
+{
+  "name": "koa-request-id",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Add a request id",
+  "dependencies": {
+    "node-uuid": "~1.4.1"
+  },
+  "devDependencies": {
+    "koa": "~0.3.0",
+    "mocha": "~1.17.0",
+    "supertest": "~0.9.0"
+  },
+  "scripts": {
+    "test": "make test"
+  }
+}
