@@ -1,8 +1,9 @@
-
 # koa-request-id
 
   Add a request id as `this.id`, if set reusing one from the querystring or
   headers.
+
+  [Express version](https://github.com/segmentio/request-id-middleware).
 
 ## Example
 
