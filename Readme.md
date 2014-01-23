@@ -4,6 +4,8 @@
   headers.
 
   [Express version](https://github.com/segmentio/request-id-middleware).
+  
+  [![build status](https://secure.travis-ci.org/segmentio/koa-request-id.png)](http://travis-ci.org/segmentio/koa-request-id)
 
 ## Example
 
@@ -20,7 +22,7 @@ app.use(function*(){
 app.listen(3000);
 ```
 
-Query it:
+  Query it:
 
 ```bash
 $ curl http://localhost:3000
