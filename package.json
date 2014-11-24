@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "description": "Add a request id",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/segmentio/koa-request-id.git"
+  },
   "dependencies": {
     "node-uuid": "~1.4.1"
   },
