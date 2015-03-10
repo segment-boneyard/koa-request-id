@@ -1,3 +1,4 @@
+var assert = require('assert');
 var koa = require('koa');
 var requestId = require('./');
 var request = require('supertest');
@@ -8,6 +9,10 @@ describe('requestId()', function(){
 
   beforeEach(function() {
     app = koa();
+  });
+
+  it('should expose a named function', function(){
+    assert.equal(requestId().name, 'requestId');
   });
 
   it('should add a request id to `ctx.state` by default', function(done){

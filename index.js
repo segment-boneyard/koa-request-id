@@ -24,7 +24,7 @@ module.exports = function(options){
     query: 'request-id'
   }, options);
 
-  return function*(next){
+  return function *requestId(next){
     var id;
 
     if (options.query) {
