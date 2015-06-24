@@ -23,5 +23,6 @@ module.exports = function(){
       || this.get(header)
       || uuid();
     yield next;
+    this.set(header, this.id);
   }
 };
