@@ -28,4 +28,11 @@ describe('requestId()', function(){
     .set('Request-id', '1337')
     .expect('1337', done);
   });
+
+  it('should add the new id to the response headers', function(done){
+    request(app.listen())
+    .get('/')
+    .set('Request-id', '1337')
+    .expect('Request-id', '1337', done);
+  });
 });
