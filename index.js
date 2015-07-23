@@ -15,13 +15,15 @@ var uuid = require('node-uuid').v4;
  * @api public
  */
 
-module.exports = function(){
-  var header = 'request-id';
-  
+module.exports = function(options){
+  options = options || {};
+  var id = options.id || 'request-id';
+
   return function*(next){
-    this.id = this.query[header]
-      || this.get(header)
+    this.id = this.query[id]
+      || this.get(id)
       || uuid();
     yield next;
+    this.set(id, this.id);
   }
 };
